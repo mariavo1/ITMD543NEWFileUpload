@@ -10,5 +10,14 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "index.html"));
 });
 
+app.post('/upload',
+    fileUpload({ createParentPath: true }),
+    (req, res) => {
+        const files = req.files
+        console.log(files)
+
+        return res.json({ status: 'success', message: Object.keys(files).toString() })
+    }
+)
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
