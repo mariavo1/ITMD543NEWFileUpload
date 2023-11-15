@@ -16,7 +16,7 @@ app.post('/upload',
         const files = req.files
         console.log(files)
 
-        return res.json({ status: 'success', message: Object.keys(files).toString() })
+        return res.json({ status: 'logged', message: 'logged'})
     }
 )
 
