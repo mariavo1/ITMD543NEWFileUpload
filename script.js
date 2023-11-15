@@ -1,6 +1,6 @@
 const form = document.getElementById('form')
 
-const sendFiles = async () => {
+    const sendFiles = async () => {
     // Object 
     const myFiles = document.getElementById('myFiles').files
 
