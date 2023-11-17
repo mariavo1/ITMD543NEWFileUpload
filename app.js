@@ -2,8 +2,8 @@ const express = require("express");
 const fileUpload = require("express-fileupload");
 const path = require("path");
 
-const filesPayloadExists = require('./middleware/filesPayloadExists');
-const fileExtLimiter = require('./middleware/fileExtLimiter');
+const filesPayloadExists = require('./controller/filesPayloadExists');
+const fileExtLimiter = require('./controller/fileExtLimiter');
 
 const PORT = process.env.PORT || 3500;
 
